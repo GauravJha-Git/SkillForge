@@ -22,6 +22,6 @@ export const hashPassword = async (password) => {
     return bcrypt.hash(password, salt);
 
 };
-export const comparePasswords = async (password, hashedPassword) => {
+export const comparePassword = async (password, hashedPassword) => {
     return bcrypt.compare(password, hashedPassword); //compares the plain password with the hashed password after extracting salt 
 };
